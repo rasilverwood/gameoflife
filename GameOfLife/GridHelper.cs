@@ -151,6 +151,9 @@ namespace GameOfLife
 
     public static bool[,] CreatePulsar(this bool[,] grid, int startX, int startY)
     {
+      if (Options.Length < startX + 16) return grid;
+      if (Options.Height < startY + 16) return grid;
+
       grid[startX + 1, startY + 5] = true;
       grid[startX + 2, startY + 5] = true;
       grid[startX + 3, startY + 5] = true;

@@ -8,8 +8,8 @@ namespace GameOfLife
     public int XValue => Convert.ToInt16(xValue.Value);
     public int YValue => Convert.ToInt16(yValue.Value);
 
-    private readonly int xSize;
-    private readonly int ySize;
+    private readonly int _xSize;
+    private readonly int _ySize;
 
     public Shape Shape
     {
@@ -24,8 +24,8 @@ namespace GameOfLife
     public AddShapeDialog(int x, int y)
     {
       InitializeComponent();
-      xSize = x;
-      ySize = y;
+      _xSize = x;
+      _ySize = y;
       gliderButton.Checked = true;
 
       xValue.Value = 0;
@@ -45,24 +45,24 @@ namespace GameOfLife
 
     private void gliderButton_CheckedChanged(object sender, EventArgs e)
     {
-      xValue.Maximum = Math.Max(0, xSize - 4);
-      yValue.Maximum = Math.Max(0, ySize - 4);
+      xValue.Maximum = Math.Max(0, _xSize - 4);
+      yValue.Maximum = Math.Max(0, _ySize - 4);
 
       ValidateControls();
     }
 
     private void pulsarButton_CheckedChanged(object sender, EventArgs e)
     {
-      xValue.Maximum = Math.Max(0, xSize - 16);
-      yValue.Maximum = Math.Max(0, ySize - 16);
+      xValue.Maximum = Math.Max(0, _xSize - 16);
+      yValue.Maximum = Math.Max(0, _ySize - 16);
 
       ValidateControls();
     }
 
     private void pentominoButton_CheckedChanged(object sender, EventArgs e)
     {
-      xValue.Maximum = Math.Max(0, xSize - 4);
-      yValue.Maximum = Math.Max(0, ySize - 4);
+      xValue.Maximum = Math.Max(0, _xSize - 4);
+      yValue.Maximum = Math.Max(0, _ySize - 4);
 
       ValidateControls();
     }

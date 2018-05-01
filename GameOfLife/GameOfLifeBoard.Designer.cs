@@ -103,7 +103,7 @@
       this.createShapeButton.Name = "createShapeButton";
       this.createShapeButton.Size = new System.Drawing.Size(80, 22);
       this.createShapeButton.Text = "Create Shape";
-      this.createShapeButton.Click += new System.EventHandler(this.createShapeButton_Click);
+      this.createShapeButton.Click += new System.EventHandler(this.CreateShapeButtonClick);
       // 
       // GameOfLifeBoard
       // 
@@ -116,7 +116,7 @@
       this.ShowIcon = false;
       this.Text = "Game of Life";
       this.Load += new System.EventHandler(this.GameOfLifeBoard_Load);
-      this.Resize += new System.EventHandler(this.GameOfLifeBoard_Resize);
+      this.Resize += new System.EventHandler(this.GameOfLifeBoardResize);
       this.toolStrip1.ResumeLayout(false);
       this.toolStrip1.PerformLayout();
       this.ResumeLayout(false);

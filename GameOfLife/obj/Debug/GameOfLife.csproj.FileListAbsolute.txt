@@ -9,3 +9,14 @@ c:\users\ras\documents\visual studio 2015\Projects\GameOfLife\GameOfLife\obj\Deb
 C:\Users\ras\Documents\Visual Studio 2015\Projects\GameOfLife\GameOfLife\obj\Debug\GameOfLife.GameOfLifeBoard.resources
 C:\Users\ras\Documents\Visual Studio 2015\Projects\GameOfLife\GameOfLife\obj\Debug\GameOfLife.OptionsDialog.resources
 C:\Users\ras\Documents\Visual Studio 2015\Projects\GameOfLife\GameOfLife\obj\Debug\GameOfLife.AddShapeDialog.resources
+D:\CodingChallenges\GameOfLife\GameOfLife\GameOfLife\bin\Debug\GameOfLife.exe.config
+D:\CodingChallenges\GameOfLife\GameOfLife\GameOfLife\obj\Debug\GameOfLife.exe
+D:\CodingChallenges\GameOfLife\GameOfLife\GameOfLife\obj\Debug\GameOfLife.pdb
+D:\CodingChallenges\GameOfLife\GameOfLife\GameOfLife\bin\Debug\GameOfLife.exe
+D:\CodingChallenges\GameOfLife\GameOfLife\GameOfLife\bin\Debug\GameOfLife.pdb
+D:\CodingChallenges\GameOfLife\GameOfLife\GameOfLife\obj\Debug\GameOfLife.csprojResolveAssemblyReference.cache
+D:\CodingChallenges\GameOfLife\GameOfLife\GameOfLife\obj\Debug\GameOfLife.AddShapeDialog.resources
+D:\CodingChallenges\GameOfLife\GameOfLife\GameOfLife\obj\Debug\GameOfLife.GameOfLifeBoard.resources
+D:\CodingChallenges\GameOfLife\GameOfLife\GameOfLife\obj\Debug\GameOfLife.OptionsDialog.resources
+D:\CodingChallenges\GameOfLife\GameOfLife\GameOfLife\obj\Debug\GameOfLife.Properties.Resources.resources
+D:\CodingChallenges\GameOfLife\GameOfLife\GameOfLife\obj\Debug\GameOfLife.csproj.GenerateResource.Cache

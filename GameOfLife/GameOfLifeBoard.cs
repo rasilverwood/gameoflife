@@ -30,11 +30,10 @@ namespace GameOfLife
     {
       ToggleStartStopMode(!_running);
 
-      if (_running)
-      {
-        var thread = new Thread(Go);
-        thread.Start();
-      }
+      if (!_running) return;
+
+      var thread = new Thread(Go);
+      thread.Start();
     }
 
     private void ClearView()
@@ -120,7 +119,7 @@ namespace GameOfLife
       }
     }
 
-    private void GameOfLifeBoard_Resize(object sender, EventArgs e)
+    private void GameOfLifeBoardResize(object sender, EventArgs e)
     {
       var grid = drawablePictureBox.Image.ToBools();
 
@@ -135,9 +134,9 @@ namespace GameOfLife
 
     private void DisplayShape(Shape shape, int x, int y)
     {
-      var grid = drawablePictureBox.Image.ToBools();
+      var grid = drawablePictureBox.Image.ToBools().GetClearedGrid();
 
-      if(shape == Shape.Pulsar) grid = grid.CreatePulsar(x, y);
+      if (shape == Shape.Pulsar) grid = grid.CreatePulsar(x, y);
       else if (shape == Shape.Glider) grid = grid.CreateGlider(x, y);
       else if (shape == Shape.Pentomino) grid = grid.CreatePentomino(x, y);
 
@@ -149,7 +148,7 @@ namespace GameOfLife
       ClearView();
     }
 
-    private void createShapeButton_Click(object sender, EventArgs e)
+    private void CreateShapeButtonClick(object sender, EventArgs e)
     {
       var grid = drawablePictureBox.Image.ToBools().GetClearedGrid();
 
